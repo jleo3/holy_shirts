@@ -2,7 +2,7 @@ class ShirtsController < ApplicationController
   before_filter :load_resource, only: [:show, :edit, :update]
 
   def index
-    @shirts = Shirt.all
+    @shirts = Shirt.search_for(params[:q]) || Shirt.all
   end
 
   def show
