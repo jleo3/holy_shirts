@@ -4,6 +4,11 @@ class ShirtsController < ApplicationController
   end
 
   def show
+    @shirt = Shirt.find(params[:id])
+  end
+
+  def edit
+    @shirt = Shirt.find(params[:id])
   end
 end
 
