@@ -1,5 +1,5 @@
 HolyShirts::Application.routes.draw do
-  resources :shirts, only: [:index, :show, :edit, :update]
+  resources :shirts, only: [:index, :show, :edit, :update, :new, :create]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

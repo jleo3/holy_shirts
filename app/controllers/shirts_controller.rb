@@ -8,6 +8,15 @@ class ShirtsController < ApplicationController
   def show
   end
 
+  def new
+    @shirt = Shirt.new
+  end
+
+  def create
+    Shirt.create(shirt_params)
+    redirect_to shirts_path
+  end
+
   def edit
   end
 

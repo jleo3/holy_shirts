@@ -3,6 +3,8 @@
   <%= submit_tag "Search" %>
 <% end %>
 
+<%= link_to 'Create New Shirt', new_shirt_path %>
+
 <% @shirts.each do |shirt| %>
   <section>
    <h3><%= link_to shirt.name, shirt %></h3>
